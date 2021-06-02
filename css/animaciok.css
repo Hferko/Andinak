@@ -1,0 +1,66 @@
+
+.anima_gomb {
+    display:          inline-block;
+    padding:          3px 5px;
+    font-size:        20px;
+    cursor:           pointer;
+    text-align:       center;
+    text-decoration:  none;
+    outline:          none;
+    color:            #fff;
+    background-color: #4CAF50;
+    border:           none;
+    border-radius:    5px;
+    box-shadow:       0 6px #aaa;        
+  }
+  
+  .anima_gomb:hover {background-color: #3e8e41}
+  
+  .anima_gomb:active {
+    background-color:  #3e8e41;
+    box-shadow:         0 5px #999;
+    transform:          translateY(4px);
+  }
+
+.card{
+    transition:         all 1s ease-out .1s;
+}
+
+.card:hover{
+    transform:          scale(1.1);
+    box-shadow:         5px 10px 5px 2px #2F4F4F;    
+    }
+   
+
+#home .intro .col-md-8{        
+    background:         rgba(128, 0, 0, .4);
+    position:           relative;
+    animation-name:     uszik;
+    animation-duration: 5s;
+}
+      
+@keyframes uszik {
+    0%   {top: 100vh; left: 100vw; background: gainsboro;}
+    100% {top: 0px; left: 0px; background:     rgba(128, 0, 0, .4);}
+}
+
+h1, h2 {   
+    color:              black;
+    animation-name:     halvany;
+    animation-duration: 4s;
+  }
+  
+@keyframes halvany {
+    from {color:        lime;}
+    to {color:          black;}
+}
+
+.kagylo{
+    animation: heartbeat .9s ease-in .5s infinite reverse backwards;
+}
+
+@keyframes heartbeat {
+    0%   {width: 80px; height: 80px; background: #333;}
+    75%  {width: 77px; height: 77px; background: #333;}
+    100% {width: 80px; height: 80px; background: #333;}
+  }

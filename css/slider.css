@@ -1,0 +1,69 @@
+* {box-sizing:border-box}
+
+/* Slider konténer */
+.slider-container {
+  max-width:  1400px;
+  position:   relative;
+  margin:     auto;  
+}
+
+/* Elrejti a nem látható képeket */
+.csuszik {
+  display:    none;
+}
+
+/* Benne a szöveg */
+.text {
+  color:      #f2f2f2;
+  font-size:  16px;
+  text-shadow: 2px 2px brown;
+  padding:    8px 12px;
+  position:   absolute;
+  bottom:     8px;
+  width:      100%;
+  text-align: center;
+  background-color: rgba(140, 140, 140, .6);
+}
+
+
+/* A képek számai (1/3) */
+.numbertext {
+  color:      #f2f2f2;
+  font-size:  12px;
+  padding:    8px 12px;
+  position:   absolute;
+  top:        0;
+}
+
+.pont {
+  cursor:           pointer;
+  height:           10px;
+  width:            10px;
+  margin:           0 2px;
+  background-color: #bbb;
+  border-radius:    50%;
+  display:          inline-block;
+  transition:       background-color 0.6s ease;
+}
+
+.active, .pont:hover {
+  background-color: #717171;
+}
+
+/* a képek kifakulása */
+.fakul {
+  -webkit-animation-name:     fakul;
+  -webkit-animation-duration: 1.8s;
+  animation-name:             fakul;
+  animation-duration:         1.8s;
+}
+
+@-webkit-keyframes fakul {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fakul {
+  from {opacity: .4}
+  to {opacity: 1}
+}

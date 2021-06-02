@@ -1,0 +1,317 @@
+* {
+    box-sizing:    border-box;
+  }
+    
+  body {    
+    margin: 0;    
+    font-family:   'Montserrat Alternates', sans-serif;
+  }  
+
+  h1, h2, h3, h4, h5{
+    font-family:   'Montserrat Alternates', sans-serif;
+  }
+
+  h1, h2{
+    text-align: center;
+    background-color: Turquoise;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  /* A Header(ami befoglalja a slidert) */
+  .header {
+    padding:        5px;
+    text-align:     center;
+    background:     Turquoise;
+    color:          white;
+  }
+  /* header vége*/
+
+  /* A menü viszonylagos és rögzített között változik, a görgetés helyétől függően. 
+  Relatív helyzetben van, amíg egy adott eltolási pozíció nem teljesül a nézetablakban - ezután a helyére "tapad" ( position:fixed;).*/
+
+  .navbar {
+    overflow:         hidden;
+    background-color: maroon;
+    position:         sticky;
+    position:         -webkit-sticky;
+    top: 0;
+  }
+  
+  /* A menü linkjei */
+
+  .navbar a {
+    float:           left;
+    display:         block;
+    color:           white;
+    text-align:      center;
+    padding:         14px 20px;
+    text-decoration: none;
+    margin:          0 5px;
+  }
+  
+  
+  /* Jobbra igazított link */
+
+  .navbar a.right {
+    float:            right;
+  }
+  
+  /* :hover színek*/
+
+  .navbar a:hover {
+    background-color: beige;
+    color:            black;
+    border-radius:    5px;
+    transition:       background-color .6s ease-in-out;      
+  }
+  
+  /* Az Active link */
+
+  .navbar a.active {
+    background-color: navy;
+    color:            white;
+    border-radius:    5px;
+  }
+
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float:         none;
+      width:         100%;
+    }
+  }
+  /* ----- NAVBAR idáig tart ------*/
+
+  /* oszlopocskák konténerecskéi */
+  .row {  
+    display:        -ms-flexbox; /* IE10 */
+    display:         flex;
+    -ms-flex-wrap:   wrap; /* IE10 */
+    flex-wrap:       wrap;
+  }
+  
+  /* Két egyenlőtlen oszlopot hoz létr, amelyek egymás mellett helyezkednek el  */
+  /* Bal oldali oszlop */
+  .side {
+    -ms-flex:         30%; /* IE10 */
+    flex:             30%;    
+    padding:          20px;
+    background-color: #FFE4B5;
+  }
+
+  .felsorol{
+    margin:          5px;
+    border-top:      1px solid;
+    padding:         5px 3px 5px 2px;    
+  }
+
+  .felsorol:hover{
+    background-color: white;
+    transition:       background-color .4s ease-in-out; 
+  }
+  
+  /* Fő oszlop */
+  .main {   
+    -ms-flex:         70%; /* IE10 */
+    flex:             70%;
+    background-color: beige;
+    padding:          20px;
+  }
+
+  .bekezd{
+    border:           1px solid;
+    border-radius:    10px;
+    border-color:     brown;
+    background-color: white;
+    margin:           10px auto;
+    padding:          10px;    
+  }  
+  
+  .cikk {
+    max-width:        100%;
+    margin:           0 auto;
+    background-color: white;
+    padding:          10px;
+    text-align:       justify;
+    
+  }
+
+  .cikk_img{
+    float:            left;
+    margin:           10px;
+  }
+  
+  .figcaption{
+    text-align:       center;
+    border-bottom:    turquoise 1px solid;
+  }  
+
+.leiras{
+    text-align:       justify;
+ }
+
+  /* -----Fő oszlop idáig----*/
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  /* --- A FOOTER----- */
+
+  footer {
+    height:          8vh;
+    width:           99vw;
+    max-width:       1400px;
+    background-color:#333;
+    color:           #fff;    
+    display:         table;  
+  }
+  
+  .footer-doboz {
+    display:         table-cell;
+    vertical-align:  middle;
+    padding:         .5rem 1rem;
+    font-size:       1rem;
+    float:           left;
+    padding-left:    2rem;
+    border-right:    1px solid;
+  }
+  
+  footer p {
+    padding-top:     .8rem; 
+    font-size:       1rem;
+    float:           left;
+    padding-left:    1rem;
+  }  
+  
+  footer a{
+    text-decoration: none;
+    cursor:          pointer;
+    color:           aqua;
+  }
+
+  footer a:hover {color: lime;}
+
+  ul{list-style-type: none;}
+
+  .nagy {
+    list-style-type: none;    
+    font-size:       1.6rem;
+  }
+
+  .shell{
+    list-style-image: url(../img/shell.svg);
+  }
+
+  .copyright{
+    text-align:      center;
+    vertical-align:  top;
+    font-size:       small;
+  }
+
+  @media (min-width: 768px) {
+
+    footer {
+      min-height:    7vh;
+    }
+  
+  }
+  /* --- A FOOTER idáig tart----- */
+  
+  /* Responziv elrendezés - ha a képernyő kevesebb, mint 700 képpont, akkor legyen a két oszlopot egymás altt, és ne egymás mellett */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responziv menü, ha a képernyő kevesebb, mint 400 képpont széles, akkor a navigációs linkeket egymásra rakja nem egymás mellé*/
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float:      none;
+      width:      100%;
+    }
+  }
+
+  /*   ==== KÁRTYÁK ====   */
+
+  /* Az 50%-al két kértyaoszlopot hozok létre, de csak 49% így lesz egy kis hely a jobb oldalon */
+.column {
+  float: left;
+  width:           49%;
+  padding:         0 10px;
+}
+
+/* ne csússzon egymásra két sor */
+.row {margin:     15PX -5px;}
+
+/* törlöm a float-olást */
+.row:after {
+  content:         "";
+  display:         table;
+  clear:           both;
+}
+
+/* Responsive legyyen az oszlop */
+@media screen and (max-width: 600px) {
+  .column {
+    width:          100%;
+    display:        block;
+    margin-bottom:  20px;
+  }
+}
+
+
+.card {
+  box-shadow:       0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding:          16px;
+  text-align:       center;
+  background-color: #f1f1f1;
+  border-radius:    15px;
+}
+
+.w3-tag{
+  padding:          2px;
+  background-color: maroon;
+}
+
+#lapoz{
+  text-align:       center;
+  border-bottom:    1px solid;
+  padding:          5px;
+}
+
+/*A levélküldő modal*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: maroon;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: brown;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #FFE4B5;
+  padding: 20px;
+}

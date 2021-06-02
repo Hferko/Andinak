@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+body:not(#home), .modal-content{
+    background-color: #FBEED8;
+}
+
+.modal-header, .modal-footer{
+background-color: #ccb182;
+}
+
+#home{    
+    height: 100vh;
+    background-image: url("../img/hatter.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#home .intro{
+    color: white;
+    height: 100vh;
+    text-align: center;
+
+}
+
+#home .intro .col-md-8{
+    background-color:rgba(0,0,0,0.4);
+}
+
+h1{
+    font-family:   'Montserrat Alternates', sans-serif;
+   /* color: #1F5B25;*/
+    text-align: center;
+}
+
+h1:not(#home h1){
+    color:#1F5B25;
+}
+
+.card{
+    border: 1px solid #1F5B25;
+    border-radius: 4px;
+}
+
+h5{
+color:#1F5B25;
+text-align: center;
+font-variant: small-caps;
+font-family:   'Montserrat Alternates', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#tagline {
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+  }
+  
+  .tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.5rem;
+    margin: .5rem auto;
+  }  
+
+  #slogan{
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  h2{
+      color: white;
+      text-align: center;
+  }
+
+ p{
+      text-align: justify;
+}

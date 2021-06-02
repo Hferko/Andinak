@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="css/alap.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/animaciok.css">    
+    <link rel="shortcut icon" type="image/x-icon" href="img/szentjakab-icon.svg">
+</head>
+<div class="navbar">      
+    <a href="kezd.html">Kezdőlap</a>
+    <a href="pre.html">Felkészülés</a>
+    <a href="ut.html">Az Út</a>
+    <a href="gallery.html">Galéria</a>
+    <a href="blog.html" class="right active">Blog</a>
+  </div>
+<body class="w3-light-grey">
+
+
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>BLOG</b></h1>
+  <p>A bejegyzésekhez való hozzászóláshoz be kell lépned - 
+      <span class="w3-tag" id="neved">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-large">Belépés</button>        
+      </span></p>
+</header>
+
+
+<div class="w3-row">
+
+<!-- A Blog -->
+<div class="w3-col l8 s12">  
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="img/2.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Bejegyzés címe</b></h3>
+      <h5>Rövid leírás, <span class="w3-opacity">2021. május 30.</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Lapozz tovább »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Kommentek  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="img/3.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOGBEJEGYZÉS</b></h3>
+      <h5>Rövid leírás, <span class="w3-opacity">2021. május 20.</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Lapozz tovább »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Kommentek  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Blog vége -->
+</div>
+
+<!-- Jobb oldali menu -->
+<div class="w3-col l4">  
+  
+  <!-- Levélküldő  ablak-->
+  <div class="w3-card w3-margin w3-margin-top">    
+    <div class="container">
+        <h3>Kapcsolat</h3>
+        <form action="">
+          <label for="fname">Keresztnév</label>
+          <input type="text" id="fname" name="firstname" placeholder="A te neved..">
+      
+          <label for="lname">Vezetéknév</label>
+          <input type="text" id="lname" name="lastname" placeholder="Vezetékneved..">
+      
+          <label for="country">Ország</label>
+          <select id="country" name="country">
+            <option value="australia">Magyarország</option>
+            <option value="canada">România</option>
+            <option value="usa">Србија</option>
+            <option value="usa">Slovensko</option>
+            <option value="usa"> Österreich</option>
+            <option value="usa"> Hrvatska</option>
+            <option value="usa"> Slovenija</option>
+            <option value="usa"> Україна</option>
+            <option value="usa"> Elefántcsontpart</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Írjál csak valami szépet.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Elküldöm">
+        </form>
+      </div>
+    </div><hr>
+    <!-- Levélküldő  ablak idáig-->
+
+    <div class="w3-card w3-margin w3-margin-top">
+        <img src="galeria/finisterra.jpg" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4><b>Hm, a belépés sikerült...</b></h4>
+            <p class="leiras">Valóban helyesen bejelentkeztél, de az az igazság, hogy a .PHP háttérprogram még kicsit várat magára, így nem tudsz még bejegyzést írni.<br>
+             Emiatt elnézést kérek. Talán záros határidőn belül...</p>
+          </div>
+    </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Népszerű bejegyzések</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="img/cruz_ferro.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="img/Yasmin.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="img/bakancs.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="img/torro.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Cimkék</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Utazás</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Santiago</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Makó</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">KERI</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Informatika</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programozás</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">JS</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IT hálózatok</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Család</span>      
+    </p>
+    </div>
+  </div>
+ </div>
+ <!-- Jobb oldali menü vége -->
+</div><br>
+</div>
+<!-- Az egész tartalom vége -->
+
+<!-- Footer -->
+<footer id="lapoz">
+    <button class="w3-button w3-black w3-disabled w3-padding-large ">Előző</button>
+    <button class="w3-button w3-black w3-padding-large ">Következő »</button>    
+</footer>
+
+<footer>    
+    <p>Követni tudsz itt:</p>
+    <div class="footer-doboz">      
+     <ul>
+        <li class="nagy"><a href="https://www.facebook.com/elcaminomagyarorszag/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a></li>
+        <li class="nagy"><a href="https://www.youtube.com/playlist?list=PLvvmMv4gfks5XEkV-883JT8UVrxIieECR" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+        <li class="nagy"><a href="https://hu.pinterest.com/search/pins/?rs=ac&len=2&q=el%20camino%20de%20santiago&eq=el%20camino&etslf=2109&term_meta[]=el%7Cautocomplete%7C0&term_meta[]=camino%7Cautocomplete%7C0&term_meta[]=de%7Cautocomplete%7C0&term_meta[]=santiago%7Cautocomplete" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i> </a></li>      
+      </ul>      
+    </div>
+    <p>Kapcsolat:</p>
+    <div class="footer-doboz">
+      <ul>
+        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+36300000000"> +36 30 000 0000</a></li>  <br>  
+        <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/ArV5KEbiCYXC2Lmv9"> - Zarándokpont</a></li> <br> 
+        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@szentjakabut.hu">info@szentjakabut.hu</a></li>
+      </ul>
+    </div>
+    <div class="footer-doboz">      
+      <ul class="shell">
+         <li><a href="kezd.html" >Kezdőlap </a></li>
+         <li><a href="pre.html" >Felkészülés </a></li>
+         <li><a href="ut.html" >Az Út </a></li>
+         <li><a href="gallery.html" >Galéria</a></li>
+         <li><a href="blog.html" >Blog</a></li>        
+       </ul>      
+     </div>
+     <div class="footer-doboz">
+      <img src="img/kagylo.svg" alt="Kagylo" class="kagylo"><br>
+      <p class="copyright">Kiszínezte az oldalt: Ferkó Student   © 2021</p>
+     </div>
+    
+  </footer>
+
+<!--============= MODAL ===================-->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="img/Yasmin.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="" name="urlap2" id="kerdes">
+        <div class="w3-section">
+          <label><b>Felhasználónév</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="admin" name="username" required>
+          <label><b>Jelszó</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="jelszo" name="pass" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="button" onclick="belep()">Belépés</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Emlékezz rám
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Elfelejtetted a <a href="#">jelszót?</a></span>
+      </div>
+
+    </div>
+  </div>
+
+<!--=========== MODAL vége ===============-->
+<script src="js/script.js"></script>
+</body>
+</html>

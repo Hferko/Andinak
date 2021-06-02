@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="css/alap.css">
+    <link rel="stylesheet" href="css/slider.css">    
+    <link rel="stylesheet" href="css/animaciok.css">    
+    <link rel="shortcut icon" type="image/x-icon" href="img/szentjakab-icon.svg">
+</head>
+<body>
+
+    <div class="header">
+        <div class="slider-container">
+
+            <div class="csuszik fakul">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/1.jpg" style="width:100%">
+              <div class="text">"Ha majd felnövök azon leszek, hogy senki ne vegye észre."</div>
+            </div>
+            
+            <div class="csuszik fakul">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/2.jpg" style="width:100%">
+              <div class="text">"Mindig vár valami az út végén, de ha nem vagy hajlandó elmenni, hogy megnézd, mi az, akkor nem is kellene az úton lenned."</div>
+            </div>
+            
+            <div class="csuszik fakul">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/3.jpg" style="width:100%">
+              <div class="text">"A jól elvégzett munka egyetlen jutalma, hogy elvégezhettük."</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="pont"></span> 
+              <span class="pont"></span> 
+              <span class="pont"></span> 
+            </div>
+    </div>
+   
+    <div class="navbar">      
+      <a href="kezd.html" >Kezdőlap</a>
+      <a href="pre.html">Felkészülés</a>
+      <a href="ut.html">Az Út</a>
+      <a href="gallery.html" class="active">Galéria</a>
+      <a href="blog.html" class="right">Blog</a>
+    </div>
+
+    <h2>Galéria</h2>
+    
+    <div class="row">
+      <div class="side">
+        <h5>A "rajtvonalon"</h5>
+
+        <div class="w3-container">        
+          <img src="galeria/rajt.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('egy_kep').style.display='block'">        
+          <div id="egy_kep" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/rajt.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h5>Ahol még a csapból is bor folyik</h5>
+
+        <div class="w3-container">        
+          <img src="galeria/irache.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep3').style.display='block'">        
+          <div id="kep3" class="w3-modal" onclick="this.style.display='none'">            
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/irache.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>       
+          <hr>
+        <h5>Kasztíliai utca</h5>
+        <div class="w3-container">        
+          <img src="galeria/ciraq2.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep2').style.display='block'">        
+          <div id="kep2" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/ciraq2.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+          <hr>
+        <h5>Útjelző </h5>
+        <div class="w3-container">        
+          <img src="galeria/kasztilia.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep4').style.display='block'">        
+          <div id="kep4" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/kasztilia.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h5>A Mérföldkő </h5>
+        <div class="w3-container">        
+          <img src="galeria/merfoldko.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep5').style.display='block'">        
+          <div id="kep5" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/merfoldko.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h5>Burgos </h5>
+        <div class="w3-container">        
+          <img src="galeria/burgos4.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep6').style.display='block'">        
+          <div id="kep6" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/burgos4.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h5>Itt hogyan fér el egy IFA...? </h5>
+        <div class="w3-container">        
+          <img src="galeria/ciraq.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep7').style.display='block'">        
+          <div id="kep7" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/ciraq.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h5>A csúcson</h5>
+        <div class="w3-container">        
+          <img src="galeria/csucson.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep8').style.display='block'">        
+          <div id="kep8" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/csucson.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h5>A tökéletlen eszű</h5>
+        <div class="w3-container">        
+          <img src="galeria/egy_marha.jpg" style="width:100%;cursor:zoom-in"
+          onclick="document.getElementById('kep9').style.display='block'">        
+          <div id="kep9" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img src="galeria/egy_marha.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>     
+        
+      </div>
+
+      <div class="main">
+       <div class="w3-container">
+        
+        <p id="galeriaCim">Katt a képre a jobb, vagy bal gombbal...</p>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/indul.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Indulás</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/pireneusok5.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Pireneusok</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/az_egben.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Égbe lépkedek</p>
+        </div>
+       </div>
+       
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/pireneusok2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Májusi hó</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/pireneusok3.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Pireneus teteje</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/pireneusok4.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Ferko "ante portás"</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/pireneusok.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Innen már csak lefele</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/baszkfold3.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Pireneusok lábánál Baszk-föld</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/baszkok.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Baszkok</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/baszkfold2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption"></p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/baszkfold.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption"></p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/marha.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption"></p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/zubiri.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Zubiri</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/pamplona3.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Pamplona</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/pamplona2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">A bikafuttatások helyszíne</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/pamplona.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Pamplona</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/pamplona_prefect.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Ahonnan a bikafuttatást indítják</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/maltai.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Cizur Menor</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/AltoDelPerdón.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Alto Del Perdón</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/esoben.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Esőben</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/nyar3.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Nyárban</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/ut.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">A Mezeta</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/mezeta.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Mezeta</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/nyar2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">ez is a Mezeta</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/utam.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">"Hűvösebb" utak</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/utam2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">...azután újra a végtelen</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/valahol.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">valahol</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/logrono.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Logroño</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/camino.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">El Camino</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/pasztor.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Falusi anzix</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/peregrinos.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Tisztelet a zarándokoknak</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/romai_kor.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Római korból ittmaradt</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/nyar.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Nyár</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/burgos.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Burgosba vezető út</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/burgos2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Burgos</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/kodben.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Ködben</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/ciraqui.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Ciraqui</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/ciraqui2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Ciraqui</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/ciraqui3.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Ciraqui</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/astorga.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Astorga</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/valahol2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Éden</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/camino2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">valahol</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/puente.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Puente de Órbigo</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/puente_orbigo.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Puente de Órbigo</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/puente_orbigo2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Puente de Órbigo</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/leon2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">León</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/gaudi_palota.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Gaudi-palota</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/gaudi.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Gaudi-palota</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/tundervar.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">"Tündérvár"</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/a_cel.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Célegyenesben</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/emlek.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">A zarándokoknak...</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/santiago.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Santiago de Compostela</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/santiago2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Santiago de Compostela</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/santiago3.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Santiago de Compostela</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/hegyekben.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">tovább a tenger felé</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/manjarin.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Manjarin</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/foncebadon.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Foncebadón</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/elso_ocean.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">...előbújik az óceán</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/beach.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Beach</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/ocean2.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Az Atlanti óceán</p>
+        </div>
+       </div>
+
+       <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+          <img src="galeria/finisterra.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Finisterra - a világ vége</p>
+        </div>
+        
+        <div class="w3-container w3-third">
+          <img src="galeria/ocean.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Innen nem vezet út tovább</p>
+        </div>
+
+        <div class="w3-container w3-third">
+          <img src="galeria/az_ut_vege.jpg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+          <p class="figcaption">Az Útnak vége!</p>
+        </div>
+       </div>
+
+       <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img01" style="width:100%">
+        </div>
+       </div>    
+
+      </div>
+    </div>
+
+    <script>
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+      </script>
+    
+    <footer>
+      <p>Követni tudsz itt:</p>
+      <div class="footer-doboz">      
+       <ul>
+          <li class="nagy"><a href="https://www.facebook.com/elcaminomagyarorszag/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a></li>
+          <li class="nagy"><a href="https://www.youtube.com/playlist?list=PLvvmMv4gfks5XEkV-883JT8UVrxIieECR" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+          <li class="nagy"><a href="https://hu.pinterest.com/search/pins/?rs=ac&len=2&q=el%20camino%20de%20santiago&eq=el%20camino&etslf=2109&term_meta[]=el%7Cautocomplete%7C0&term_meta[]=camino%7Cautocomplete%7C0&term_meta[]=de%7Cautocomplete%7C0&term_meta[]=santiago%7Cautocomplete" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i> </a></li>      
+        </ul>      
+      </div>
+      <p>Kapcsolat:</p>
+      <div class="footer-doboz">
+        <ul>
+          <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+36300000000"> +36 30 000 0000</a></li>  <br>  
+          <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/ArV5KEbiCYXC2Lmv9"> - Zarándokpont</a></li> <br> 
+          <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@szentjakabut.hu">info@szentjakabut.hu</a></li>
+        </ul>
+      </div>
+      <div class="footer-doboz">      
+        <ul class="shell">
+           <li><a href="kezd.html" >Kezdőlap </a></li>
+           <li><a href="pre.html" >Felkészülés </a></li>
+           <li><a href="ut.html" >Az Út </a></li>
+           <li><a href="gallery.html" >Galéria</a></li>
+           <li><a href="blog.html" >Blog</a></li>        
+         </ul>      
+       </div>
+       <div class="footer-doboz">
+        <img src="img/kagylo.svg" alt="Kagylo" class="kagylo"><br>
+        <p class="copyright">Kiszínezte az oldalt: Ferkó Student   © 2021</p>
+       </div>
+      
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+    

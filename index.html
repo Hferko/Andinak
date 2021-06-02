@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Camino - az utam</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/animaciok.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/szentjakab-icon.svg">
+
+</head>
+<body id="home">
+ 
+<!--============ MODAL =================-->
+<div class="w3-container">    
+  <body onload="document.getElementById('id01').style.display='block'">    
+  
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-teal"> 
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h3>Köszöntelek a lapomon! A nevem Hangai Ferko</h3>
+    </header>
+    <div class="w3-container">
+      <p id="neve">Mielőtt tovább lépnénk</p>
+        <form name="urlap"  action="">
+          <h3>Kérlek írd be hogyan szólíthatlak</h3>
+            
+          <input type="text" name="nev" placeholder="becses neved"><br>
+          talán, ha kiválasztanád a titulust is...<br>
+          <select id="Select"> 
+            <option> </option>               
+            <option>asszony</option>
+            <option>kisasszony</option>
+            <option>ténsasszony</option>
+            <option>tanárnő</option>
+            <option>úr</option>
+            <option>kegyelmes úr</option>
+            <option>őrmester</option>
+            <option> öcsém </option>
+            <option>őrnagy úr </option>
+          </select>
+          <input type="button" class="w3-button" value="Teljesítve" onclick="opcio()">            
+        </form>       
+    </div>
+    <footer class="w3-container w3-teal">
+      <h3 id="pelda"></h3>  
+      <h3 id="prefix"></h3>
+      <h3 id="wellcome"></h3>        
+        <button id="zar" type="button" disabled class="w3-button w3-right w3-white w3-border" 
+        onclick="document.getElementById('id01').style.display='none'">Bézárnám</button>            
+    </footer>    
+  </div>  
+  </div>
+</div>
+</div>       
+<!--============ MODAL eddig ================= -->
+
+<main class="container">
+  <div class="row intro">
+<div class="col-md-8 col-lg-6 align-self-center">
+<h1 class="my-5">El Camino - az utam</h1>
+<div id="tagline">Köszöntelek a lapomon!</div>
+<h4 id="slogan">"Indulj el, hogy megérkezhess!"</h4>
+<img src="img/szentjakab-logo-white.svg" alt="" class="w-25 mx-auto my-5 d-block">
+</div>
+<h3 id="footer" onclick="nyit()"></h3>
+  </div>
+</main>
+
+ <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script>
+  function nyit() {
+    window.open("kezd.html");   
+  }
+  </script>
+</body>
+</html>
